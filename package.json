@@ -1,0 +1,43 @@
+{
+  "name": "joany",
+  "dependencies": {
+    "hub": "git+ssh://git@git.d.ops.com:x.ops.com/hub.git#70209426a49b565d6eee3c06a33f013fbc97b964",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "dev": "aristotle src/index.js",
+    "production": "aristotle ./src/index.js ./dist"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "standard",
+      "standard-react",
+      "prettier"
+    ],
+    "rules": {
+      "react/prop-types": 0
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "font-blast": "^0.6.1",
+    "aristotle": "git+ssh://git@git.d.ops.com:x.ops.com/aristotle.git#8c81398b1ebfd910ab47b6cf7159bb5deb95e998",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.12.1"
+  }
+}
